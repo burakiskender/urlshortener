@@ -1,0 +1,29 @@
+﻿<div class="row">
+    <div class="col-md-12 jumbotron">
+
+        <h2>Developer Notes</h2>
+        <p>
+            <br />
+            Here is how I structured the solution:
+            <br />
+            <ul>
+                <li><b>UrlShortener.Data : </b> Data Access Layer. I used EF Code First and Migrations.</li>
+                <li><b>UrlShortener.Web : </b> Web Layer. I used boilerplate MVC application with Razor and jQuery</li>
+                <li><b>UrlShortener.Web.Tests : </b> Unit Tests projects. I created the unit tests and used Moq framework to mock a Request and tested the Url conversion.</li>
+            </ul>
+
+        <p>
+            In this solution I wanted to demonstrate couple of things. One of them was generic repository and unit of work pattern.
+            Even though the functionality is not fully utilized, this would be the pattern I would prefer for a broader solution.
+        </p>
+
+        <p>At the front end, I used <b>jQuery</b> and  <b>jQuery.validate</b> libraries for ajax call and input validation.</p>
+        <p>I also used <a href="http://spin.js.org/" target="_blank">spin.js</a> to give a better user experience.</p>
+        <p>(Please refer to <b>main.js</b> in Scripts folder to see the usage of all libraries I used)</p>
+        <br />
+        <p>Hope that helps,</p>
+        <p>Burak Iskender</p>
+
+        <p>* In order to run the project, make sure the Data project is set as startup project and run <b>update-database</b> command in package manage console.</p>
+    </div>
+</div>
